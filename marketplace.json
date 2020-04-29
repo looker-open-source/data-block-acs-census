@@ -11,11 +11,16 @@
           "value_constraint": "connection"
         },
         "DIALECT" : {
-          "label" : "Dialect",
-          "value_constraint" : ["bigquery", "redshift", "snowflake"]
+          "label" : "Dialect (bigquery, redshift, or snowflake)"
         },
         "CONFIG_PROJECT_NAME": {
             "label": "Config Project Name"
         }
+    },
+    "models": [
+    {
+      "name": "acs_census",
+      "connection_constant": "CONNECTION_NAME"
     }
+  ]
 }
