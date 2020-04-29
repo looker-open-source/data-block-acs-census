@@ -1,4 +1,4 @@
-view: bq_zcta_distances {
+view: zcta_distances {
 
   derived_table: {
     sql: SELECT *

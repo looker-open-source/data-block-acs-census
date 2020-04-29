@@ -6,18 +6,8 @@
         "tagline": "Bring your transaction data to life using the Braintree Block."
     },
     "constants": {
-        "CONNECTION_NAME": {
-            "label": "Connection Name",
-            "value_constraint": "connection"
-        },
         "CONFIG_PROJECT_NAME": {
             "label": "Config Project Name"
         }
     },
-    "models": [
-        {
-            "name": "bigquery.acs_2015.model",
-            "connection_constant": "CONNECTION_NAME"
-        }
-    ]
 }

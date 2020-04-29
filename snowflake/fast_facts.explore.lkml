@@ -1,4 +1,4 @@
-include: "snowflake.*.view.lkml"
+include: "/snowflake/*.view.lkml"
 
 
 explore: fast_facts {

@@ -1,4 +1,4 @@
-include: "redshift.*.view.lkml"
+include: "/redshift/*.view.lkml"
 
 explore: fast_facts {
   from: rs_logrecno_bg_map
