@@ -1,5 +1,5 @@
 
-view: sf_tract_zcta_map {
+view: tract_zcta_map {
   label: "Geography"
   derived_table: {
     sql:

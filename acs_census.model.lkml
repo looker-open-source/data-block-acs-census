@@ -1,2 +1,7 @@
 connection: "@{CONNECTION_NAME}"
-include: "/@{DIALECT}/*"
+include: "/@{DIALECT}/*explore"
+
+
+explore: census_fast_facts {
+  extends: [fast_facts]
+}

@@ -1,4 +1,4 @@
-view: rs_logrecno_bg_map {
+view: logrecno_bg_map {
     label: "Geography"
     derived_table: {
       sql:

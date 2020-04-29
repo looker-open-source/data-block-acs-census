@@ -1,4 +1,4 @@
-view: sf_block_group_facts {
+view: block_group_facts {
   sql_table_name: ACS.FAST_FACTS ;;
 
   dimension: logrecno_bg_map_block_group {
