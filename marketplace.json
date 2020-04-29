@@ -6,6 +6,14 @@
         "tagline": "Bring your transaction data to life using the Braintree Block."
     },
     "constants": {
+        "CONNECTION_NAME": {
+          "label": "Connection Name",
+          "value_constraint": "connection"
+        },
+        "DIALECT" : {
+          "label" : "Dialect",
+          "value_constraint" : ["bigquery", "redshift", "snowflake"]
+        },
         "CONFIG_PROJECT_NAME": {
             "label": "Config Project Name"
         }
