@@ -1,4 +1,4 @@
-include: "bigquery.*.view.lkml"
+include: "*.view.lkml"
 
 
 explore: fast_facts {
