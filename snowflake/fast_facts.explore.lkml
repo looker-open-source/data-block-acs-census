@@ -4,6 +4,7 @@ include: "/snowflake/*.view.lkml"
 explore: fast_facts {
   hidden: yes
   view_name: logrecno_bg_map
+  extension: required
 
   join: block_group_facts {
     from: block_group_facts

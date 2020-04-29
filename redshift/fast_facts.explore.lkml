@@ -3,6 +3,7 @@ include: "/redshift/*.view.lkml"
 explore: fast_facts {
   view_name: logrecno_bg_map
   hidden: yes
+  extension: required
 
   join: block_group_facts {
     from: block_group_facts

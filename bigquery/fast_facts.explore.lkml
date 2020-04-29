@@ -3,6 +3,7 @@ include: "*.view.lkml"
 
 explore: fast_facts {
   hidden: yes
+  extension: required
   view_name: logrecno_bg_map
 
   join: block_group_facts {
