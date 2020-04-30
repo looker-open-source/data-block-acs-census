@@ -4,7 +4,7 @@ project_name: "acs-demographic-data"
 
 constant: CONFIG_PROJECT_NAME {
   value: "data-block-acs-census-config"
-  export: override_required
+  export: override_optional
 }
 
 constant: CONNECTION_NAME {

@@ -7,7 +7,6 @@ view: zcta_distances {
 #####################################################
 
 view: zcta_distances_core {
-  extension: required
 
   derived_table: {
     sql: SELECT *

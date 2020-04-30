@@ -7,7 +7,6 @@ view: logrecno_bg_map {
 #####################################################
 
 view: logrecno_bg_map_core {
-  extension: required
   label: "Geography"
   derived_table: {
     sql:

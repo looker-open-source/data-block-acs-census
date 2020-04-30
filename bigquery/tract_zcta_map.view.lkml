@@ -8,7 +8,6 @@ view: tract_zcta_map {
 
 
 view: tract_zcta_map_core {
-  extension: required
   label: "Geography"
   derived_table: {
     sql:
