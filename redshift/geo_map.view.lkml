@@ -68,6 +68,7 @@ view: logrecno_bg_map {
     dimension: stusab {
       label: "State Abbreviation"
       group_label: "State"
+      description: "Two Letter State Identifier"
       link: {
         url: "https://maps.google.com?q={{value}}"
         label: "Google Maps"
@@ -90,6 +91,7 @@ view: logrecno_bg_map {
     dimension: state {
       group_label: "State"
       label: "State FIPS Code"
+      description: "State Federal Information Processing Standard Indentifier"
       sql: ${TABLE}.state_fips_code;;
       suggest_persist_for: "120 hours"
     }
@@ -105,6 +107,7 @@ view: logrecno_bg_map {
     dimension: county {
       group_label: "County"
       label: "County FIPS Code"
+      description: "County Federal Information Processing Standard Indentifier"
       sql: ${state} || ${TABLE}.county_fips_code;;
       map_layer_name: us_counties_fips
       drill_fields: [tract, block_group]
@@ -132,6 +135,7 @@ view: logrecno_bg_map {
     dimension: tract {
       label: "Tract Geo Code"
       group_label: "Tract"
+      description: "6 Digit Tract Identifier"
       sql: ${TABLE}.geoid11 ;;
       map_layer_name: tract
       suggest_persist_for: "120 hours"
@@ -159,6 +163,7 @@ view: logrecno_bg_map {
       sql: SUBSTRING(${TABLE}.geoid, 8, 12) ;;
       group_label: "Block Group"
       label: "Block Group Geo Code"
+      description: "12 Digit Geo ID"
       map_layer_name: block_group
       link: {
         url: "https://google.com?q={{value}}"
@@ -169,12 +174,14 @@ view: logrecno_bg_map {
 
     dimension: block_group_name {
       sql: ${TABLE}.block_group_name || ', ' || ${tract_name} ;;
+      description: "Block Group Number, Tract Number and County Name"
       group_label: "Block Group"
       suggest_persist_for: "120 hours"
     }
 
     dimension: block_group_centroid {
       type: location
+      description: "Geographical Center of Tract"
       sql_latitude: ${TABLE}.latitude ;;
       sql_longitude: ${TABLE}.longitude ;;
       group_label: "Block Group"
@@ -184,6 +191,7 @@ view: logrecno_bg_map {
     measure: sq_miles_land {
       sql: ${TABLE}.square_miles_land ;;
       label: "Square Miles of Land"
+      description: "Square Miles of Land within ZCTA"
       type: sum
       value_format_name: decimal_2
     }
@@ -191,6 +199,7 @@ view: logrecno_bg_map {
     measure: sq_miles_water {
       sql: ${TABLE}.square_miles_water ;;
       label: "Square Miles of Water"
+      description: "Square Miles of Water within ZCTA"
       type: sum
       value_format_name: decimal_2
     }

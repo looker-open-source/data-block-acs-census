@@ -15,6 +15,7 @@ view: tract_zcta_map {
     sql: LPAD(CAST(${TABLE}.ZCTA5 as STRING), 5, '0');;
     type: zipcode
     label: "ZIP (ZCTA)"
+    description: "Zip Code or Zip Code Tabulation Area"
   }
 }
 

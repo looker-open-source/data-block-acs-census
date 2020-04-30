@@ -29,6 +29,7 @@ view: zcta_distances {
       label: "Selected ZIP Code"
       view_label: "Geography"
       group_label: "ZIP Radii"
+      description: "Use Filter to Select Zip Code, Empty If Not Filtered"
       type: zipcode
       sql: ${TABLE}.zip1 ;;
       suggestable: no
@@ -38,6 +39,7 @@ view: zcta_distances {
       label: "Nearby ZIP"
       view_label: "Geography"
       group_label: "ZIP Radii"
+      description: "Use Filter to Select Zip Code, Empty If Not Filtered"
       type: zipcode
       sql: ${TABLE}.zip2 ;;
       hidden: yes
