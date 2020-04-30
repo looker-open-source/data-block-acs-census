@@ -1,4 +1,12 @@
+include: "//@{CONFIG_PROJECT_NAME}/tract_zcta_map.view.lkml"
+
 view: tract_zcta_map {
+  extends: [tract_zcta_map_config]
+}
+
+#####################################################
+
+view: tract_zcta_map_core {
   label: "Geography"
   derived_table: {
     sql:

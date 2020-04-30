@@ -1,4 +1,11 @@
+include: "//@{CONFIG_PROJECT_NAME}/zcta_distances.view.lkml"
+
 view: zcta_distances {
+  extends: [zcta_distances_config]
+}
+
+#####################################################
+view: zcta_distances_core {
 
   derived_table: {
     sql: SELECT *

@@ -1,7 +1,6 @@
-include: "/snowflake/*.view.lkml"
+include: "*.view.lkml"
 
-
-explore: fast_facts {
+explore: census_fast_facts_core {
   hidden: yes
   view_name: logrecno_bg_map
   extension: required

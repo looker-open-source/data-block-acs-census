@@ -1,6 +1,6 @@
-include: "/redshift/*.view.lkml"
+include: "*.view.lkml"
 
-explore: fast_facts {
+explore: census_fast_facts_core {
   view_name: logrecno_bg_map
   hidden: yes
   extension: required

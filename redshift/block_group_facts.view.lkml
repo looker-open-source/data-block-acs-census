@@ -1,4 +1,12 @@
+include: "//@{CONFIG_PROJECT_NAME}/block_group_facts.view.lkml"
+
 view: block_group_facts {
+  extends: [block_group_facts_config]
+}
+
+#####################################################
+
+view: block_group_facts_core {
   sql_table_name: acs.fast_facts ;;
 
   dimension: logrecno_bg_map_block_group {

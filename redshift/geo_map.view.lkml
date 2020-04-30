@@ -1,4 +1,12 @@
+include: "//@{CONFIG_PROJECT_NAME}/logrecno_bg_map.view.lkml"
+
 view: logrecno_bg_map {
+  extends: [logrecno_bg_map_config]
+}
+
+#####################################################
+
+view: logrecno_bg_map_core {
     label: "Geography"
     derived_table: {
       sql:
