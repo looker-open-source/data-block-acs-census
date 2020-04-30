@@ -1,4 +1,4 @@
-project_name: "data-block-acs-census"
+project_name: "acs_demographic"
 
 constant: CONNECTION_NAME {
   value: "brick-layer"
