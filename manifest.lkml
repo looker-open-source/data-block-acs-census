@@ -1,4 +1,11 @@
-project_name: "acs_demographic"
+project_name: "acs-demographic-data"
+
+################ Constants ##################
+
+constant: CONFIG_PROJECT_NAME {
+  value: "data-block-acs-census-config"
+  export: override_required
+}
 
 constant: CONNECTION_NAME {
   value: "brick-layer"
@@ -8,4 +15,11 @@ constant: CONNECTION_NAME {
 constant: DIALECT {
   value: "bigquery"
   export: override_optional
+}
+
+
+################ Dependencies ################
+
+local_dependency: {
+  project: "@{CONFIG_PROJECT_NAME}"
 }

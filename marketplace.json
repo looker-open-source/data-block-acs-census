@@ -22,5 +22,13 @@
       "name": "acs_demographic",
       "connection_constant": "CONNECTION_NAME"
     }
+  ],
+    "auxiliary_projects": [
+    {
+      "git_uri": "git://github.com/llooker/data-blocks-acs-census-config.git",
+      "git_ref": "0a117ef05a82d135f4eed631ebac95c256c784de",
+      "label": "ACS Demographic Data Config",
+      "constant_name": "CONFIG_PROJECT_NAME"
+    }
   ]
 }
