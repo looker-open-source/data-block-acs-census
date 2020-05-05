@@ -26,7 +26,7 @@
     "auxiliary_projects": [
     {
       "git_uri": "git://github.com/llooker/data-blocks-acs-census-config.git",
-      "git_ref": "b4a5ba3ac2045cd3897ff3a706e2c91a2164cdad",
+      "git_ref": "77aa72e42320860bbc63613f8c613c94a10acc63",
       "label": "ACS Demographic Data Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }
