@@ -2,7 +2,7 @@
     "label": "ACS Demographic Data",
     "category_label": "Models",
     "branding": {
-        "image_uri": "https://marketplace-api.looker.com/block-icons/acs_census_icon.png",
+        "image_uri": "https://marketplace-api.looker.com/block-icons/acs_demographic_icon.png",
         "tagline": "Get to know your audience with the ACS Demographic Data Block."
     },
     "constants": {
