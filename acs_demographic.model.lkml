@@ -5,6 +5,5 @@ include: "*.dashboard"
 
 
 explore: census_fast_facts {
-  hidden: no
   extends: [census_fast_facts_config]
 }

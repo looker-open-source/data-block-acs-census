@@ -1,7 +1,6 @@
 include: "*.view.lkml"
 
 explore: census_fast_facts_core {
-  hidden: yes
   extension: required
   view_name: logrecno_bg_map
 

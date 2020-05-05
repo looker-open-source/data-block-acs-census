@@ -2,7 +2,6 @@ include: "*.view.lkml"
 
 explore: census_fast_facts_core {
   view_name: logrecno_bg_map
-  hidden: yes
   extension: required
 
   join: block_group_facts {
