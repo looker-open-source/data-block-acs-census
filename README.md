@@ -7,7 +7,7 @@ The U.S. Census Bureau’s [American Community Survey (ACS)](https://www.census.
 Use [project import](https://docs.looker.com/data-modeling/learning-lookml/importing-projects) with [extends](https://docs.looker.com/data-modeling/learning-lookml/extends) or [refinements](https://docs.looker.com/data-modeling/learning-lookml/refinements) to include this data block in your other projects.
 Your dialect will need to be in the \`include\` path to ensure the correct LookML files are being imported. For example:
 
-\`include: "//marketplace_acs_demographic/bigquery/*.view"\`
+`include: "//marketplace_acs_demographic/bigquery/*.view"`
 
 
 **NOTE:** Additional setup is required for **Amazon Redshift** and **Snowflake** databases:
@@ -17,6 +17,6 @@ Your dialect will need to be in the \`include\` path to ensure the correct LookM
 - **Snowflake** users can either import the ACS dataset [from Looker's GCS or S3 bucket](https://docs.looker.com/data-modeling/looker-blocks#accessing_datasets_on_other_databases) using these [DDL statements](https://github.com/llooker/datablocks-acs/blob/master/readme.md) as a template **or** follow our [docs here](https://docs.looker.com/data-modeling/looker-blocks#accessing_datasets_on_snowflake) to get access to Looker's public data warehouse.
 
 **For users outside the US using Looker’s public dataset:** Google BigQuery and Snowflake do not support project sharing across regions. To directly access this data block from outside the U.S. region, you can either:
-- Import Looker’s public data from [GCS or Amazon S3.](https://docs.looker.com/data-modeling/looker-blocks#accessing_datasets_on_other_databases)
 
+- Import Looker’s public data from [GCS or Amazon S3.](https://docs.looker.com/data-modeling/looker-blocks#accessing_datasets_on_other_databases)
 - Create a new Google BigQuery or Snowflake connection based in the US region.
