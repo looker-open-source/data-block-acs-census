@@ -5,9 +5,9 @@ The U.S. Census Bureau’s [American Community Survey (ACS)](https://www.census.
 
 
 Use [project import](https://docs.looker.com/data-modeling/learning-lookml/importing-projects) with [extends](https://docs.looker.com/data-modeling/learning-lookml/extends) or [refinements](https://docs.looker.com/data-modeling/learning-lookml/refinements) to include this data block in your other projects.
-Your dialect will need to be in the \`include\` path to ensure the correct LookML files are being imported. For example:
+Your dialect will need to be in the \`include\` path to ensure the correct LookML files are being imported. For example, a Bigquery connection could use:
 
-\`include: "//marketplace_acs_demographic/bigquery/*.view"\`
+\`include: "//marketplace_acs_demographic/bigquery/*.lkml"\`
 
 
 **NOTE:** Additional setup is required for **Amazon Redshift** and **Snowflake** databases:
